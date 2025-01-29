@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+/* Le code CSS spécifique à la page d'accueil */
+>>>>>>> 1e70bf2c28d9ee151ee5b468f579e013f1f031da
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -139,7 +143,11 @@ body {
 
 .feature.special h3 {
     color: #28a745; 
+<<<<<<< HEAD
 }
+=======
+} 
+>>>>>>> 1e70bf2c28d9ee151ee5b468f579e013f1f031da
 
 .testimonials {
     padding: 60px 20px;
@@ -222,6 +230,7 @@ body {
     font-size: 1rem;
     color: #555;
 }
+<<<<<<< HEAD
 
 
 .download {
@@ -312,3 +321,5 @@ body {
     color: #bbb; 
   }
   
+=======
+>>>>>>> 1e70bf2c28d9ee151ee5b468f579e013f1f031da
