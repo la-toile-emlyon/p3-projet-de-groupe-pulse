@@ -164,5 +164,113 @@ header{
 /* perssona */
 .perssona{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagePerssona{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.imgAshley{
+    width: fit-content;
+    height: 100%;
+}
+
+.infoPerssona{
+    width: 55%;
+    height: 100%;
+}
+
+/* hr */
+.separatioonInfo{
+    width: 95%;
+    border: solid 1px black;
+    border-radius: 50px;
+    margin: 0;
+}
+/*  */
+.infoPerssona h1{
+    font-size: 80px;
+    margin: 0;
+}
+
+/* infoPresentation */
+.infoPresentation{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.infoPresentation img{
+    width: 30px;
+}
+
+.infoPresentation p{
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* separatioonInfo */
+.statPerssona{
+    display: flex;
+    align-items: flex-end;
+    padding: 8px;
+    gap: 5px;
+}
+
+.statPerssona h2{
+    margin: 0;
+
+}
+
+.statTitre{
+    display: flex;
+    flex-direction: column;
+}
+
+.statTitre img{
+    width: 150px;
+}   
+
+.statTitre h1{
+    font-size: 13px;
+    margin: 0;
+    padding: 5px;
+}
+
+.end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mid-right{
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.mid-left{
+    display: flex;
+    justify-content: center;
+    margin-right: 150px;
+}
+
+
+/* vieAshley */
+.vieAshley{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+/* chronologie */
+.chronologie{
+    width: 100%;
+    height: 100VH;
+    background-color: gray;
 }

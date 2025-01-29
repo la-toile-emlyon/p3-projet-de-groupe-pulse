@@ -231,6 +231,7 @@ body {
     color: #555;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 .download {
@@ -323,3 +324,38 @@ body {
   
 =======
 >>>>>>> 1e70bf2c28d9ee151ee5b468f579e013f1f031da
+=======
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .footer-content {
+    margin-bottom: 20px;
+  }
+  .footer-text {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .footer-link {
+    color: #4CAF50;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  .footer-link:hover {
+    color: #45A049;
+  }
+  .footer-note {
+    font-size: 0.9rem;
+    color: #bbb;
+  }
+>>>>>>> e193bf06b87121d8ea474a4ab4c2d0269382d8f1
