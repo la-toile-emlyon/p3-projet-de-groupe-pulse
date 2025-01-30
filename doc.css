@@ -183,7 +183,7 @@ header{
 }
 
 .infoPerssona{
-    width: 55%;
+    width: 50%;
     height: 100%;
 }
 
@@ -271,6 +271,94 @@ header{
 /* chronologie */
 .chronologie{
     width: 100%;
-    height: 100VH;
+    height: fit-content;
     background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
+
+.wierframe{
+    display: flex;
+    width: 1000px;  
+    padding: 50px;
+    position: sticky;
+    top: 0;
+}
+
+.wierframe img{
+    width: 300px;
+    border-bottom-left-radius: 50px;
+}
+
+.wierframeInfo{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-top-right-radius: 50px;
+    background-color: white;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.wierframeInfo a{
+    color: blue;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px blue;
+    font-weight: 900;
+    width: fit-content;
+    transition: all 0.5s;
+}
+
+.wierframeInfo a:hover{
+    background-color: blue;
+    color: white;
+}
+
+.container {
+    height: 200vh; /* Simule une longue page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sticky-wrapper {
+    position: relative;
+    width: 400px; /* Taille du conteneur */
+    height: 500px;
+    border: 2px solid black;
+    overflow: hidden; /* Empêche le dépassement */
+  }
+  
+
+  .spacer {
+    height: 100vh; /* Espace après la boîte */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+  }
+
+  /* testeAplli */
+  .testeAplli{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+  }
+
+  .testeAplli img{
+    width: fit-content;
+    height: 100%;
+  }
+/*  .a-venir */
+  .a-venir{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+  }
