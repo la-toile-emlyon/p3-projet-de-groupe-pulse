@@ -1,8 +1,10 @@
 
-
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
-  background: linear-gradient(135deg, #000000 0%, #005f73 100%);
+  background: #003d46 ;
   transition: background 0.6s ease-in-out;
   margin: 0;
   font-family: Arial, sans-serif;
@@ -12,44 +14,94 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color:#F0F0F0;
+    color:#A8D8F8;
 }
 .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
 .navbar a {
-    color: #fff;
+    color:black;
     text-decoration: none;
     margin-left: 20px;
     font-size: 1rem;
+    transition: color 0.3s ease;
 }
 .navbar a:hover {
-    text-decoration: underline;
+    text-decoration: none; 
+    color:#7FDBFF;
 }
 .header {
-    background-color: #444;
+    position: relative;
     color: white;
-    text-align: center;
-    padding: 100px 20px;
-    background-image: url('image-fond.jpg'); 
+    text-align: left;
+    padding: 400px 20px;
+    background-image: url('https://i.pinimg.com/originals/4b/ff/13/4bff138fc7017f607f95313502eadba9.jpg'); 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
+.header-text {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 40%; 
+    padding-left: 20px;
+}
 .header h1 {
     font-size: 3rem;
     margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #7FDBFF;
 }
+
 .header p {
     font-size: 1.5rem;
-    margin-top: 20px;
+    font-family: 'Verdana', sans-serif;
+    color: whitesmoke;
+    margin-top: 10px;
 }
+
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%); 
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0); 
+      opacity: 1;
+    }
+  }
+  
+  
+  .header h1, .header p {
+    animation: slideInLeft 1.5s ease-out; 
+  }
+  
+  
+  .header h1 {
+    font-family: 'Arial', sans-serif; 
+    font-weight: bold;
+    font-size: 3rem;
+    color:#A8D8F8; 
+  }
+  
+  .header p {
+    font-family: 'Verdana', sans-serif; 
+    font-size: 1.5rem;
+    color: whitesmoke;
+    margin-top: 10px;
+  }
+
 
 .contexte {
     padding: 60px 20px;
     text-align: center;
+    background-color: #004f5b;
 }
 .contexte h2 {
     font-size: 2.5rem;
@@ -78,8 +130,8 @@ body {
 
 .fonctionnalites {
     padding: 60px 20px;
-    background-color: #f8f9fa; 
     text-align: center;
+    background-color: #00565b;
 }
 
 .fonctionnalites h2 {
@@ -150,6 +202,7 @@ body {
     padding: 60px 20px;
     background-color: #f1f5f9; 
     text-align: center;
+    background-color: #004a50;
 }
 
 .testimonials h2 {
@@ -160,8 +213,7 @@ body {
 }
 
 .testimonials .intro {
-    font-size: 1.2rem;
-    color: #555;
+    font-size: 1.2rem; 
     margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
@@ -194,7 +246,7 @@ body {
     border-radius: 50%; 
     margin-bottom: 15px;
     object-fit: cover;
-    border: 3px solid #28a745; 
+    border: 3px solid #004a50;
     margin-top: 30px; 
 }
 
@@ -222,7 +274,7 @@ body {
 }
 
 .context, .fonctionnalites, .testimonials {
-  background: linear-gradient(135deg, #000000 0%, #005f73 100%);
+  background: #003d46;
   transition: background 0.6s ease-in-out;
   padding: 60px 20px; 
   color: white; 
@@ -237,7 +289,7 @@ body {
 
 
 .download {
-    background-color: #f0f0f0; 
+
     padding: 50px 20px; 
     text-align: center; 
     border-radius: 10px; 
@@ -278,7 +330,7 @@ body {
 
   
   .footer {
-    background-color: #333;
+    background-color:#F0F0F0;
     color: white;
     padding: 40px 20px;
     text-align: center;
@@ -301,17 +353,71 @@ body {
 }
 
 .footer-link {
-    color: #4CAF50;
+    color:black;
     font-size: 1.1rem;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-link:hover {
-    color: #45A049;
+    color:#7FDBFF;
 }
 
 .footer-note {
     font-size: 0.9rem;
     color: #bbb;
 }
+
+
+#backToTop {
+    position: fixed;
+    bottom: 30px; /* Laisser un peu d'espace en bas de la page */
+    right: 30px; /* Positionner la flèche à droite */
+    display: none; /* Par défaut, on cache la flèche */
+    background-color: yellow; /* Couleur de fond de la flèche */
+    color: white; /* Couleur du texte (flèche) */
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #backToTop:hover {
+    background-color: #218838; /* Couleur de fond lorsque l'on survole la flèche */
+  }
+  
+
+@keyframes shine {
+    0% {
+      background-position: -200%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
+  
+  .header {
+    position: relative;
+    overflow: hidden; /* Important pour limiter l'effet à la section */
+  }
+  
+  .header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    background-size: 200% 100%;
+    animation: shine 4s linear infinite;
+    pointer-events: none; /* Pour ne pas bloquer les interactions */
+  }
+  
