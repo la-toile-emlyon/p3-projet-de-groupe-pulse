@@ -4,7 +4,7 @@ html {
   }
 
 body {
-  background: #003d46 ;
+  background: linear-gradient(to bottom, #000000, #00008B); ;
   transition: background 0.6s ease-in-out;
   margin: 0;
   font-family: Arial, sans-serif;
@@ -101,7 +101,6 @@ body {
 .contexte {
     padding: 60px 20px;
     text-align: center;
-    background-color: #004f5b;
 }
 .contexte h2 {
     font-size: 2.5rem;
@@ -131,7 +130,6 @@ body {
 .fonctionnalites {
     padding: 60px 20px;
     text-align: center;
-    background-color: #00565b;
 }
 
 .fonctionnalites h2 {
@@ -200,9 +198,7 @@ body {
 
 .testimonials {
     padding: 60px 20px;
-    background-color: #f1f5f9; 
     text-align: center;
-    background-color: #004a50;
 }
 
 .testimonials h2 {
@@ -228,7 +224,6 @@ body {
 }
 
 .testimonial {
-    background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     text-align: center;
@@ -253,7 +248,6 @@ body {
 .testimonial blockquote {
     font-style: italic;
     font-size: 1.1rem;
-    color: #333;
     margin-bottom: 15px;
     line-height: 1.4;
     quotes: "“" "”";
@@ -263,7 +257,7 @@ body {
   font-weight: bold;
   font-size: 1rem;
   color: #555;
-  line-height: 1.5; /* Ajuste l'espacement ici aussi si nécessaire */
+  line-height: 1.5; 
 }
 
 
@@ -274,7 +268,6 @@ body {
 }
 
 .context, .fonctionnalites, .testimonials {
-  background: #003d46;
   transition: background 0.6s ease-in-out;
   padding: 60px 20px; 
   color: white; 
@@ -284,8 +277,6 @@ body {
 }
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
 .download {
@@ -371,11 +362,11 @@ body {
 
 #backToTop {
     position: fixed;
-    bottom: 30px; /* Laisser un peu d'espace en bas de la page */
-    right: 30px; /* Positionner la flèche à droite */
-    display: none; /* Par défaut, on cache la flèche */
-    background-color: yellow; /* Couleur de fond de la flèche */
-    color: white; /* Couleur du texte (flèche) */
+    bottom: 30px; 
+    right: 30px; 
+    display: none; 
+    background-color: yellow; 
+    color: white; 
     border: none;
     border-radius: 50%;
     padding: 15px;
@@ -385,7 +376,7 @@ body {
   }
   
   #backToTop:hover {
-    background-color: #218838; /* Couleur de fond lorsque l'on survole la flèche */
+    background-color: #218838; 
   }
   
 
