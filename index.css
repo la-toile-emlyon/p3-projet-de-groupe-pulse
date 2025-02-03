@@ -1,13 +1,14 @@
-
-html {
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+html{
     scroll-behavior: smooth;
-  }
+    
+}
 
 body {
-  background: #003d46 ;
+  background: linear-gradient(to bottom, #000000, #00008B);
   transition: background 0.6s ease-in-out;
+  font-family: "Michroma", serif;
   margin: 0;
-  font-family: Arial, sans-serif;
 }
 .navbar {
     display: flex;
@@ -37,7 +38,7 @@ body {
     color: white;
     text-align: left;
     padding: 400px 20px;
-    background-image: url('https://i.pinimg.com/originals/4b/ff/13/4bff138fc7017f607f95313502eadba9.jpg'); 
+    background-image: url(''); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +102,6 @@ body {
 .contexte {
     padding: 60px 20px;
     text-align: center;
-    background-color: #004f5b;
 }
 .contexte h2 {
     font-size: 2.5rem;
@@ -131,7 +131,6 @@ body {
 .fonctionnalites {
     padding: 60px 20px;
     text-align: center;
-    background-color: #00565b;
 }
 
 .fonctionnalites h2 {
@@ -202,7 +201,6 @@ body {
     padding: 60px 20px;
     background-color: #f1f5f9; 
     text-align: center;
-    background-color: #004a50;
 }
 
 .testimonials h2 {
@@ -263,7 +261,7 @@ body {
   font-weight: bold;
   font-size: 1rem;
   color: #555;
-  line-height: 1.5; /* Ajuste l'espacement ici aussi si nécessaire */
+  line-height: 1.5; 
 }
 
 
@@ -274,7 +272,6 @@ body {
 }
 
 .context, .fonctionnalites, .testimonials {
-  background: #003d46;
   transition: background 0.6s ease-in-out;
   padding: 60px 20px; 
   color: white; 
@@ -282,10 +279,6 @@ body {
 .context h2, .fonctionnalites h2, .testimonials h2 {
   color: white; 
 }
-
-
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
 .download {
@@ -371,11 +364,11 @@ body {
 
 #backToTop {
     position: fixed;
-    bottom: 30px; /* Laisser un peu d'espace en bas de la page */
-    right: 30px; /* Positionner la flèche à droite */
-    display: none; /* Par défaut, on cache la flèche */
-    background-color: yellow; /* Couleur de fond de la flèche */
-    color: white; /* Couleur du texte (flèche) */
+    bottom: 30px; 
+    right: 30px; 
+    display: none; 
+    background-color: yellow; 
+    color: white; 
     border: none;
     border-radius: 50%;
     padding: 15px;
@@ -385,7 +378,7 @@ body {
   }
   
   #backToTop:hover {
-    background-color: #218838; /* Couleur de fond lorsque l'on survole la flèche */
+    background-color: #218838; 
   }
   
 
@@ -400,7 +393,7 @@ body {
   
   .header {
     position: relative;
-    overflow: hidden; /* Important pour limiter l'effet à la section */
+    overflow: hidden; 
   }
   
   .header::after {
@@ -418,6 +411,6 @@ body {
     );
     background-size: 200% 100%;
     animation: shine 4s linear infinite;
-    pointer-events: none; /* Pour ne pas bloquer les interactions */
+    pointer-events: none; 
   }
   
