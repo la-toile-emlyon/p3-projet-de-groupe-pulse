@@ -1,1 +1,367 @@
 /* Le code CSS spécifique à la page de documentation */
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+html,body{
+    margin: 0;
+    font-family: "Michroma", serif;
+}
+/* nav bar */
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logoPulse{
+    width: 100px;
+    padding: 10px;
+}
+
+.btnNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+}
+
+.btNtelecharger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    border: solid 2px black;
+}
+
+.btNtelecharger img{
+    width: 20px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.infoHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:50%;
+    gap: 50px;
+}
+
+.infoHeader h1{
+    margin: 0;
+    font-size: 100px;
+}
+
+.infoHeader p{
+    font-size: 30px;
+}
+/* contexte */
+.contexte{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.allCard{
+    background-color: gray;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+/* card flip */
+.flip-card-front{
+    border-radius: 50px;
+    background-image: url(asette/64837ebf10f03adda1aa3127279f23ed.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.flip-card-front h1{
+    font-size: 80px;
+    margin: 0;
+}
+
+.flip-card-front hr{
+    width: 80%;
+    height: 5px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.flip-card-front h2{
+    width: 80%;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 80%;
+    height: 80%;
+    perspective: 1000px;
+    padding: 30px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+  }
+/* perssona */
+.perssona{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagePerssona{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.imgAshley{
+    width: fit-content;
+    height: 100%;
+}
+
+.infoPerssona{
+    width: 50%;
+    height: 100%;
+}
+
+/* hr */
+.separatioonInfo{
+    width: 95%;
+    border: solid 1px black;
+    border-radius: 50px;
+    margin: 0;
+}
+/*  */
+.infoPerssona h1{
+    font-size: 80px;
+    margin: 0;
+}
+
+/* infoPresentation */
+.infoPresentation{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.infoPresentation img{
+    width: 30px;
+}
+
+.infoPresentation p{
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* separatioonInfo */
+.statPerssona{
+    display: flex;
+    align-items: flex-end;
+    padding: 8px;
+    gap: 5px;
+}
+
+.statPerssona h2{
+    margin: 0;
+
+}
+
+.statTitre{
+    display: flex;
+    flex-direction: column;
+}
+
+.statTitre img{
+    width: 150px;
+}   
+
+.statTitre h1{
+    font-size: 13px;
+    margin: 0;
+    padding: 5px;
+}
+
+.end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mid-right{
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.mid-left{
+    display: flex;
+    justify-content: center;
+    margin-right: 150px;
+}
+
+
+/* vieAshley */
+.vieAshley{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+/* chronologie */
+.chronologie{
+    width: 100%;
+    height: fit-content;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.wierframe{
+    display: flex;
+    width: 1000px;  
+    padding: 50px;
+    position: sticky;
+    top: 0;
+}
+
+.wierframe img{
+    width: 300px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,1);
+    border: 2px solid black;
+}
+
+.wierframeInfo{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-top-right-radius: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,1);
+    border: 2px solid black;
+}
+
+.wierframeInfo a{
+    color: blue;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px blue;
+    font-weight: 900;
+    width: fit-content;
+    transition: all 0.5s;
+}
+
+.wierframeInfo a:hover{
+    background-color: blue;
+    color: white;
+}
+
+.container {
+    height: 200vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sticky-wrapper {
+    position: relative;
+    width: 400px; 
+    height: 500px;
+    border: 2px solid black;
+    overflow: hidden; 
+  }
+  
+  .spacer {
+    width: 100%;
+    height: 50vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    z-index: 1;
+    background-color: white;
+  }
+
+  /* testeAplli */
+  .testeAplli{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+  }
+
+  .testeAplli img{
+    width: fit-content;
+    height: 100%;
+  }
+/*  .a-venir */
+  .a-venir{
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+  }
