@@ -199,7 +199,6 @@ body {
 
 .testimonials {
     padding: 60px 20px;
-    background-color: #f1f5f9; 
     text-align: center;
 }
 
@@ -226,7 +225,6 @@ body {
 }
 
 .testimonial {
-    background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     text-align: center;
@@ -251,7 +249,6 @@ body {
 .testimonial blockquote {
     font-style: italic;
     font-size: 1.1rem;
-    color: #333;
     margin-bottom: 15px;
     line-height: 1.4;
     quotes: "“" "”";
@@ -279,7 +276,6 @@ body {
 .context h2, .fonctionnalites h2, .testimonials h2 {
   color: white; 
 }
-
 
 .download {
 
