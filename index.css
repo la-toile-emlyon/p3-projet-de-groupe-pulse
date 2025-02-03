@@ -255,11 +255,3 @@ body {
     font-size: 0.9rem;
     color: #bbb;
   }
-
-  .sticky-header {
-    position: sticky;
-    top: 0; /* L'élément reste collé en haut */
-    background: white;
-    padding: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }

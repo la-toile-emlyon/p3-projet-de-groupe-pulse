@@ -291,6 +291,8 @@ header{
 .wierframe img{
     width: 300px;
     border-bottom-left-radius: 50px;
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,1);
+    border: 2px solid black;
 }
 
 .wierframeInfo{
@@ -300,7 +302,8 @@ header{
     flex-direction: column;
     border-top-right-radius: 50px;
     background-color: white;
-    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 50px 0px rgba(0,0,0,1);
+    border: 2px solid black;
 }
 
 .wierframeInfo a{
@@ -319,7 +322,7 @@ header{
 }
 
 .container {
-    height: 200vh; /* Simule une longue page */
+    height: 200vh; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,19 +330,21 @@ header{
   
   .sticky-wrapper {
     position: relative;
-    width: 400px; /* Taille du conteneur */
+    width: 400px; 
     height: 500px;
     border: 2px solid black;
-    overflow: hidden; /* Empêche le dépassement */
+    overflow: hidden; 
   }
   
-
   .spacer {
-    height: 100vh; /* Espace après la boîte */
+    width: 100%;
+    height: 50vh; 
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5em;
+    font-size: 5em;
+    z-index: 1;
+    background-color: white;
   }
 
   /* testeAplli */
