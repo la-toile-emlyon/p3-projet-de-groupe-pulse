@@ -1,7 +1,11 @@
+h1{
+    font-family: var(--font-family-title);
+}
 /* header */
 header{
     display: flex;
     justify-content: center;
+    justify-content: space-around;
     width: 100%;
     height: 100vh;
 }
@@ -11,7 +15,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width:50%;
+    width:60%;
     gap: 50px;
 }
 
@@ -22,15 +26,15 @@ header{
 }
 
 .infoHeader p{
-    font-size: 30px;
+    font-size: 25px;
 }
 /* contexte */
 .contexte{
-    height: 100vh;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    flex-direction: column;
+    height: 100vh;
 }
 
 .allCard{
@@ -43,74 +47,21 @@ header{
     gap: 30px;
 }
 
-/* card flip */
-.flip-card-front{
-    border-radius: 50px;
-    background-image: url(assets/64837ebf10f03adda1aa3127279f23ed.jpg);
+.card{
+    width: 30%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
-    color: white;
 }
 
-.flip-card-front h1{
-    font-size: 80px;
-    margin: 0;
-}
-
-.flip-card-front hr{
-    width: 80%;
-    height: 5px;
+.card img{
+    width: fit-content;
     border-radius: 10px;
-    background-color: white;
 }
 
-.flip-card-front h2{
-    width: 80%;
-}
 
-.flip-card {
-    background-color: transparent;
-    width: 80%;
-    height: 80%;
-    perspective: 1000px;
-    padding: 30px;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-  }
-  
-  .flip-card-back {
-    background-color: var(--secondary-color);
-    color: black;
-    padding: 10%;
-    transform: rotateY(180deg);
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    line-height: 30px;
-    font-size: 20px;
-  }
 /* perssona */
 .perssona{
     height: 120vh;
