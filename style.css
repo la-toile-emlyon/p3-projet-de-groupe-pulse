@@ -12,7 +12,7 @@ html{
   --background-grey: -webkit-linear-gradient(90deg, #000000,#3a3939);
   --background-blue: -webkit-linear-gradient(180deg, #00eaff,#000000);                           
   --font-family-title: "Michroma", serif;
-  --font-family-text: "IBM Plex Mono", sans-serif;
+  --font-family-text: "Albert",Sans-serif;
   --font-color: white;
   --secondary-color: #00EAFF;
 }
@@ -40,7 +40,7 @@ nav{
 
 
 .logo {
-  animation: pulse 0.5s infinite ease-in-out alternate;
+  animation: pulse 1.5s infinite ease-in-out alternate;
 }
 
 @keyframes pulse {

@@ -24,10 +24,7 @@ html {
 }
 
 .header {
-  position: relative;
   color: black;
-  /* text-align: left; */
-  padding: 400px 20px;
   margin: 0;
   display: flex;
   justify-content: center;
@@ -35,9 +32,6 @@ html {
   justify-content: space-between;
 }
 .header-text {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
   width: 40%;
   padding-left: 10%;
 }
@@ -76,9 +70,17 @@ html {
   color: whitesmoke;
   margin-top: 10px;
 }
-.contexte {
-  padding: 60px 20px;
-  text-align: center;
+
+.contexte{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contexte .intro{
+  font-size: 1.2rem;
+  color: white;
+  width: 50%;
 }
 .contexte h2 {
   font-size: 2.5rem;
@@ -92,40 +94,33 @@ html {
 .contexte .stats {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
+  gap: 2%;
+  margin: 0 2%;
 }
 .contexte .stats div {
-  text-align: center;
+  width: 30%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  padding: 0% 2%;
 }
 .contexte .stats h3 {
   font-size: 2rem;
 }
 
 .fonctionnalites {
-  padding: 60px 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 .fonctionnalites h2 {
   font-size: 2.5rem;
   color: #333;
-  margin-bottom: 20px;
 }
 .fonctionnalites .intro {
   font-size: 1.2rem;
   color: white;
-  margin-bottom: 40px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
-    font-size: 1.2rem;
-    color: white;
-    margin-bottom: 40px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.6;
+  width: 50%;
 }
 .features-grid {
   display: grid;
@@ -134,12 +129,14 @@ html {
   margin-top: 20px;
 }
 .feature {
-  background-color: #fff;
+  background: rgb(0,234,255);
+background: linear-gradient(0deg, rgba(0,234,255,1) 0%, rgba(255,255,255,1) 100%);
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+  height: 70%;
 }
 .feature:hover {
   transform: translateY(-5px);
@@ -166,6 +163,14 @@ html {
 .feature.special h3 {
   color: var(--secondary-color);
 }
+
+.feature img{
+  height: 50%;
+  width: 50%;
+  object-fit: contain;
+}
+
+
 .testimonials {
   padding: 60px 20px;
   text-align: center;
