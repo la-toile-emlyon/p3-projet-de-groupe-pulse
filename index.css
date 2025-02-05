@@ -1,1 +1,340 @@
-/* Le code CSS spécifique à la page d'accueil */
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  color:black;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+
+.navbar a:hover {
+  text-decoration: none;
+  color:#7FDBFF;
+}
+
+.header {
+  color: black;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-text {
+  width: 40%;
+  padding-left: 10%;
+}
+.header h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+.header img {
+  width: 40%;
+}
+
+.header p {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin-top: 10px;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.header h1, .header p {
+  animation: slideInLeft 1.5s ease-out;
+}
+
+.header p {
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin-top: 10px;
+}
+
+/* Section contexte */
+.contexte {
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contexte {
+  animation: fadeIn 2s forwards; /* L'animation dure 2 secondes et reste visible à la fin */
+}
+
+
+.stat-item {
+  animation: fadeIn 2s forwards;
+  animation-delay: 0.5s; /* L'animation des éléments de statistiques se fait après un léger délai */
+}
+
+.stat-item:nth-child(2) {
+  animation-delay: 1s; /* Un délai plus long pour le deuxième élément */
+}
+
+.stat-item:nth-child(3) {
+  animation-delay: 1.5s; /* Un délai encore plus long pour le troisième élément */
+}
+
+.contexte h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.contexte p {
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+/* Disposition des stats */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.stats div {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats img {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px; /* Coins arrondis */
+}
+
+.stats h3 {
+  font-size: 2rem;
+  color: #1e90ff;
+}
+
+.stats p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Pour les petites résolutions (responsive) */
+@media screen and (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats div {
+    max-width: 80%;
+  }
+}
+
+.fonctionnalites {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fonctionnalites h2 {
+  font-size: 2.5rem;
+  color: #333;
+}
+.fonctionnalites .intro {
+  font-size: 1.2rem;
+  color: white;
+  width: 50%;
+}
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+.feature {
+  background: rgb(0,234,255);
+background: linear-gradient(0deg, rgba(0,234,255,1) 0%, rgba(255,255,255,1) 100%);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  height: 70%;
+}
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+.feature-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+.feature h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+.feature p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+.feature.special {
+  border: 2px solid var(--secondary-color);
+}
+.feature.special h3 {
+  color: var(--secondary-color);
+}
+
+.feature img{
+  height: 50%;
+  width: 50%;
+  object-fit: contain;
+}
+
+
+.testimonials {
+  padding: 60px 20px;
+  text-align: center;
+}
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.testimonials .intro {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  text-align: center;
+}
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+.testimonial {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testimonial:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+.testimonial-photo {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  object-fit: cover;
+  border: 3px solid #004A50;
+  margin-top: 30px;
+}
+.testimonial blockquote {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  quotes: "“" "”";
+}
+.testimonial .user {
+font-weight: bold;
+font-size: 1rem;
+color: #555;
+line-height: 1.5;
+}
+.testimonial .user {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #555;
+}
+.context, .fonctionnalites, .testimonials {
+transition: background 0.6s ease-in-out;
+padding: 60px 20px;
+color: white;
+}
+.context h2, .fonctionnalites h2, .testimonials h2 {
+color: white;
+}
+
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: none;
+  background-color: yellow;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#backToTop:hover {
+  background-color: var(--secondary-color);
+}
+@keyframes shine {
+  0% {
+    background-position: -200%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+.header {
+  position: relative;
+  overflow: hidden; /* Important pour limiter l'effet à la section */
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    var(--secondary-color) 50%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  background-size: 200% 100%;
+  animation: shine 4s linear infinite;
+  pointer-events: none; /* Pour ne pas bloquer les interactions */
+}

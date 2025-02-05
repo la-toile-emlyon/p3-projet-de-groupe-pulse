@@ -1,1 +1,311 @@
-/* Le code CSS spécifique à la page de documentation */
+h1{
+    font-family: var(--font-family-title);
+}
+/* header */
+header{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+}
+
+header img{
+    height: 90%;
+}
+.infoHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:60%;
+    gap: 50px;
+}
+
+.infoHeader h1{
+    margin: 0;
+    font-size: 80px;
+    font-family: var(--font-family-title);
+}
+
+.infoHeader p{
+    font-size: 20px;
+}
+/* contexte */
+.contexte{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.Titre{
+    font-size: 50px;
+    margin: 0px;
+    text-align: center;
+}
+
+.allCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+    padding: 40px;
+}
+
+.card {
+    width: 33%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background: white;
+    text-align: center;
+    height: 90%;
+}
+.card img {
+    width: fit-content;
+    height: 300px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.card h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+.card p {
+    color: #555;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* perssona */
+
+.perssona{
+    height: 120vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.personaALL{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imagePerssona{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+.imgAshley{
+    width: fit-content;
+    height: 100%;
+}
+
+.infoPerssona{
+    width: 50%;
+    height: 100%;
+}
+
+/* hr */
+.separatioonInfo{
+    width: 95%;
+    border: solid 1px black;
+    border-radius: 50px;
+    margin: 0;
+}
+/*  */
+.infoPerssona h1{
+    font-size: 80px;
+    margin: 0;
+}
+
+/* infoPresentation */
+.infoPresentation{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.infoPresentation img{
+    width: 30px;
+}
+
+.infoPresentation p{
+    font-weight: 500;
+    font-size: 13px;
+}
+
+/* separatioonInfo */
+.statPerssona{
+    display: flex;
+    align-items: flex-end;
+    padding: 8px;
+    gap: 5px;
+}
+
+.statPerssona h2{
+    margin: 0;
+
+}
+
+.statTitre{
+    display: flex;
+    flex-direction: column;
+}
+
+.statTitre img{
+    width: 150px;
+}   
+
+.statTitre h1{
+    font-size: 13px;
+    margin: 0;
+    padding: 5px;
+}
+
+.end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mid-right{
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.mid-left{
+    display: flex;
+    justify-content: center;
+    margin-right: 150px;
+}
+
+
+/* vieAshley */
+.vieAshley{
+    font-size: 15px;
+    font-weight: 900;
+}
+
+/* mockup */
+.mockup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+/* chronologie */
+.chronologie{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 200px;
+    gap: 150px;
+}
+
+.wierframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 55px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50px;
+    box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.15);
+    border: solid 1px turquoise;
+    height: 80vh;
+}
+
+.wierframe img{
+    height: 100%;
+    width: fit-content;
+}
+
+.infoMockup{
+    width: 60%;
+    padding: 10px;
+}
+
+.infoMockup h1{
+    font-size: 50px;
+}
+
+.infoMockup p{
+    font-size: 20px;
+    width: 80%;
+}
+
+.btnWierframe{
+    padding: 10px;
+    border-radius: 10px;
+    border: solid white 2px;
+    transition: all 0.3s;
+}
+.btnWierframe:hover{
+    background-color: white;
+}
+
+
+/* mockup */
+.mockup{
+    height: 100vh;
+}
+
+/*  .a-venir */
+.a-venir{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 50px 0px
+}
+
+.avenir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avenir img{
+    width: 30%;
+}
+
+.avenirInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 50%;
+}
+
+.avenirInfo h1{
+    font-size: 50px;
+    margin: 0;
+}
+
+.avenirInfo p{
+    font-size: 20px;
+}
+
+.revers{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
