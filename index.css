@@ -71,40 +71,88 @@ html {
   margin-top: 10px;
 }
 
-.contexte{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Section contexte */
+.contexte {
+  padding: 40px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.contexte {
+  animation: fadeIn 2s forwards; /* L'animation dure 2 secondes et reste visible à la fin */
 }
 
-.contexte .intro{
-  font-size: 1.2rem;
-  color: white;
-  width: 50%;
+
+.stat-item {
+  animation: fadeIn 2s forwards;
+  animation-delay: 0.5s; /* L'animation des éléments de statistiques se fait après un léger délai */
 }
+
+.stat-item:nth-child(2) {
+  animation-delay: 1s; /* Un délai plus long pour le deuxième élément */
+}
+
+.stat-item:nth-child(3) {
+  animation-delay: 1.5s; /* Un délai encore plus long pour le troisième élément */
+}
+
 .contexte h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
 }
+
 .contexte p {
   font-size: 1.2rem;
-  margin-bottom: 20px;
-  line-height: 1.6;
+  color: #ffffff;
 }
-.contexte .stats {
+
+/* Disposition des stats */
+.stats {
   display: flex;
-  justify-content: center;
-  gap: 2%;
-  margin: 0 2%;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
-.contexte .stats div {
-  width: 30%;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 16px;
-  padding: 0% 2%;
+
+.stats div {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.contexte .stats h3 {
+
+.stats img {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px; /* Coins arrondis */
+}
+
+.stats h3 {
   font-size: 2rem;
+  color: #1e90ff;
+}
+
+.stats p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Pour les petites résolutions (responsive) */
+@media screen and (max-width: 768px) {
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats div {
+    max-width: 80%;
+  }
 }
 
 .fonctionnalites {

@@ -41,7 +41,7 @@ header img{
 
 .Titre{
     font-size: 50px;
-    margin: 20px;
+    margin: 0px;
     text-align: center;
 }
 
@@ -267,21 +267,45 @@ header img{
     height: 100vh;
 }
 
+/*  .a-venir */
+.a-venir{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 50px 0px
+}
 
-  /* testeAplli */
-  .testeAplli{
-    height: 100vh;
+.avenir{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0px;
-  }
+}
 
-  .testeAplli img{
-    width: fit-content;
-    height: 100%;
-  }
-/*  .a-venir */
-  .a-venir{
-    height: 100vh;
-  }
+.avenir img{
+    width: 30%;
+}
+
+.avenirInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 50%;
+}
+
+.avenirInfo h1{
+    font-size: 50px;
+    margin: 0;
+}
+
+.avenirInfo p{
+    font-size: 20px;
+}
+
+.revers{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
